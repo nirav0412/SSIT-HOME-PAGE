@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+body {
+    margin: 0px;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    overflow-x: hidden;
+}
+html{
+    --bg: #fff;
+    --color: #000;
+}
+html[dark]{
+    --bg: #000;
+    --color: #fff;
+}
+main {
+    background-color: white;
+    text-align: center;
+}
+header{
+    
+    background-position-x: 10%;
+    padding: 25px;
+}
+
+.btn-filled{
+    text-decoration: none;
+    padding: 0.8rem 1.4rem;
+    background-color: #3161d6eb;
+    border-radius: 15px;
+    color:white;
+    max-width: 10rem;
+}
+
+.btn-filled:hover{
+    background-color: #3d4577;
+    font-weight: bolder;
+}
+
+.log{
+    box-sizing: border-box;
+    height: 45px;
+    width: 80px;
+    color: white;
+    border: 2px solid #3161d6eb;
+    background-image: linear-gradient(to top left,#3161d6eb,#3161d6eb,#3161d6eb,#e6ff59);
+}
+.log:hover{
+    background-color: #0b2c7feb;
+    background-image: linear-gradient(to top left,#3161d6eb,#3161d6eb,#3161d6eb,#e6ff59);
+    color: #e6ff59;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 0.5s ease-in;
+    
+}
+.home{
+    background-color: #3161d6eb;
+    color: white;
+    border-radius: 10px;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-out;
+}
+.home:hover{
+    background-color: #0b2c7feb;
+    color: white;
+    font-weight: bold;
+    border: 0px solid #3161d6eb;
+
+    
+    cursor: pointer;
+}
+.visi:hover{background-color: #0b2c7feb;
+    border: 0px solid #3161d6eb;
+    height: 45px;
+    width: 118px;
+}
+.cour:hover{background-color: #0b2c7feb;
+    border: 0px solid #3161d6eb;
+    height: 45px;
+    width: 80px;
+}
+.info:hover{background-color: #0b2c7feb;
+    border: 0px solid #3161d6eb;
+    height: 45px;
+    width: 100px;
+}
+
+/*----------------------------- navbar section----------------------------------- */
+
+#navbar{
+    padding: 1rem 0;
+    /* max-width: 1400px; */
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    /* border:2px solid red; */
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-left{
+    margin-left:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:default;
+}
+
+.nav-left h3{
+    color: #3161d6eb;
+    letter-spacing:2px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-align: left;
+}
+
+.nav-left h3 span{
+    color: #3161d6eb;
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-right{
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    position: sticky;
+    cursor: pointer;
+}
+
+.nav-right a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px;
+    margin: 0px;
+    float:left;
+    color: #3161d6eb;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color:#2e2929;
+    color: white;
+}
+
+
+/*--------------------------------- Taaaaaarrifff-------------------------------*/
+.landing-section{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+    padding-bottom: 0rem;
+    margin-top: 0rem;
+    background-color:rgb(205, 199, 199,0.15);
+    
+}
+.landing-upper-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+
+}
+.landing-upper-part-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    text-align: left;
+    padding: 1rem 2rem;
+    margin-left: 5rem;
+}
+.landing-upper-part-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 2rem 2rem;
+}
+.landing-upper-part-image img{
+    width: 452px;
+    height: 305px;
+}
+.video-part{
+    width: 340px;
+    margin-top: -90px;
+    height: 190px;
+    /* border: 2px solid green; */
+    position: absolute;
+}
+.video-part video{
+    width: 100%;
+    height: 100%;
+}
+/* ---------------------------GET READY TO DISCOVER--------------------------------- */
+.getready{
+    background-image:linear-gradient(to top left, #3161d6eb,#3161d6eb,#e6ff59);
+    height: 220px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+}
+.getr{margin-top: 20px;
+    padding-top: 20px;
+    font-size:100px;
+    margin-bottom: -75px;
+    
+}
+.tod{
+    font-size: 70px;
+    font-weight: lighter;
+}
+/*--------------------------------------- courses---------------------------------- */
+section{
+    padding: 0.5rem 4rem;
+    
+    border-radius: 15px;
+    height: 340px;
+}
+.cr{box-sizing: border-box;
+    border: 2px solid #3161d6eb;
+    height: 39px;
+    width: 130px;
+    border-radius: 5px;
+margin-left: 44%;
+margin-top: 8px;
+    background-color: #3161d6eb;
+    color: white;
+}
+.difcourses{
+    justify-content: left;
+text-align: justify;
+display: flex;
+justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.first{
+    display: flex;
+    justify-items:flex-start ;
+}
+
+.civil{
+    margin-left: 138px;
+}
+.crslink1{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    font-size: 20px;
+    color: #3161d6eb;
+    font-weight: bold;
+}
+
+.crslink1:hover{
+    color:black;
+}
+/* -------------------------------------------------------------------------------- */
+ .staff{
+    height: 100%;
+}
+.prin{
+    height: 200px;
+    width: 200px;
+}
+/* ---------------------------------------------------------------------------- */
+footer {
+    background-color: rgb(218, 151, 151);
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    display:flex;
+    
+    font-weight: bold;
+    text-decoration: none;
+    /* padding: 5px; */
+    text-align: center;
+    float:left;
+    align-content: space-between;
+    gap: 12em;
+    color: #000000;
+}
